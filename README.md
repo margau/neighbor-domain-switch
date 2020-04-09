@@ -21,6 +21,10 @@ neighbor_domain_switch: Boolean, if the switch is enabled
 
 neighbor_switch_offline_mins: Integer, Switch after this time in offline state. Default: 5 Minutes
 
+connection_check_targets: IPv6-Targets to check to determine online/offline state
+
+neighbor_switch_wifi_enabled: Also trying to figure out neighbors by scanning for mesh SSID's
+
 ## Domain Broadcast
 
 This packet should distribute the current domain, the number of direct neighbors in the domain, and the check_targets with results via an UDP multicast.
